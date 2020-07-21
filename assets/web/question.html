@@ -1,0 +1,74 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+          name="viewport"/>
+    <link href="css/question.css" rel="stylesheet" type="text/css"/>
+</head>
+<body >
+<div class="hidden" id="question_container">
+    <div class="column">
+        <div class="">
+            <div class="question" id="question"></div>
+
+            <img class="column" id="question_image"
+                 src="" vspace="20">
+            <br>
+            <div class="optionBox" id="container_option_a" onClick="optionClicked('A')">
+                <div class="circle-with-text" id="innerCircleA">
+                    A
+                </div>
+                <div class="option" id="opt_a">
+                </div>
+                <span class="image"></span>
+                <img class="option" id="opt_a_image"
+                     src="" vspace="5">
+            </div>
+            <div class="optionBox" id="container_option_b" onClick="optionClicked('B')">
+                <div class="circle-with-text" id="innerCircleB">
+                    B
+                </div>
+                <div class="option" id="opt_b">
+                </div>
+                <span class="image"></span>
+                <img class="option"
+                     id="opt_b_image" src="" vspace="5">
+            </div>
+            <div class="optionBox" id="container_option_c" onClick="optionClicked('C')">
+                <div class="circle-with-text" id="innerCircleC">
+                    C
+                </div>
+                <div class="option" id="opt_c"></div>
+                <span class="image"></span>
+                <img class="option" id="opt_c_image" src="" vspace="5">
+            </div>
+            <div class="optionBox" id="container_option_d" onClick="optionClicked('D')">
+                <div class="circle-with-text" id="innerCircleD">
+                    D
+                </div>
+                <div class="option" id="opt_d">
+                </div>
+                <span class="image"></span>
+                <img class="option" id="opt_d_image"
+                     src="" vspace="5">
+            </div>
+
+            <div class="hidden" id="explanation_ly">
+                <h4>Explanation</h4>
+                <div class="question column" id="explanation_question" style="margin-top: 10px">
+                </div>
+                <img class="column" height="150" id="explanation_question_img"
+                     src="" vspace="20">
+            </div>
+            <br><br>
+        </div>
+
+
+    </div>
+
+</div>
+</body>
+<script src="MathJax/MathJax.js?config=TeX-AMS-MML_SVG" type="text/javascript"></script>
+<script src="js/question.js" type="text/javascript"></script>
+
+</html>

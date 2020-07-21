@@ -1,0 +1,187 @@
+/* nunito-regular - latin */
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Nunito Regular'), local('Nunito-Regular'),
+    url('../fonts/nunito-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* nunito-600 - latin */
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Nunito SemiBold'), local('Nunito-SemiBold'),
+    url('../fonts/nunito-v12-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* nunito-700 - latin */
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Nunito Bold'), local('Nunito-Bold'),
+    url('../fonts/nunito-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+/* font-family: Arial, Helvetica, sans-serif;*/
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+
+
+}
+
+/* Float four columns side by side */
+
+.column {
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+
+.row {
+    margin: 0 -5px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive columns */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Style the counter cards */
+
+.card {
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #E6E6E6;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.optionBox {
+    min-height: 60px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    justify-content: left;
+    display: flex;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08);
+    padding: 3px 3px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow-x: inherit;
+    animation-duration: 150ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    transition: 150ms all ease-in;
+    align-items: center;
+}
+
+.circle-with-text {
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    height: 28px;
+    margin-right: 10px;
+    margin-left: 5px;
+    width: 28px;
+    border: 1.6px solid #e8e8e8;
+
+
+}
+
+
+.optionBox.correct {
+    border-width: 2px;
+    background-color: #fff;
+    border-color: #68C721;
+}
+
+.optionBox.wrong {
+    border-width: 2px;
+    background-color: #fff;
+    border-color: #ff0000;
+}
+
+
+
+.optionBox.selected {
+    border-width: 2px;
+    border-color: #a1a1a1;
+    box-shadow: 0 2px 4px 0 rgba(74,144,226,0.25);
+    background-color: #d3d3d3;
+}
+
+/*
+.optionBox.selected .image {
+    display: inline-block;
+    background-image: url(../images/tick.svg);
+    height: 15px;
+    width: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+*/
+
+.optionBox.correct .image {
+    display: inline-block;
+    background-image: url(../images/tick.svg);
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.optionBox.wrong .image {
+    display: inline-block;
+    background-image: url(../images/close.svg);
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.option {
+    width: calc(100% - 60px);
+    display: inline-block;
+}
+
+.question {
+    text-align: left;/*justify*/
+}
+
+div.hidden {
+    display: none
+}
